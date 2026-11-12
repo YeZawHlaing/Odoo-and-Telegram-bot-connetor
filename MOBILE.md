@@ -50,3 +50,29 @@ Use this endpoint when you have an Odoo model name (e.g., `product.template`) an
   ]
 }
 ```
+---
+
+### B. Stream Image Binary Directly
+
+Pass this URL directly into Flutter image widgets (Image.network or CachedNetworkImage). The server handles authentication and streaming behind the scenes and returns standard image bytes.
+
+- Method: GET
+
+- Endpoint: /api/v1/media/:mediaId
+
+- Example URL:
+  ```text
+  [http://192.168.1.25:3000/api/v1/media/m_2eef8e5f9902](http://192.168.1.25:3000/api/v1/media/m_2eef8e5f9902)
+  ```
+
+- Response Headers:
+
+1. Content-Type: image/jpeg (or image/png)
+2. Cache-Control: public, max-age=86400 (24-hour client caching enabled)
+
+- Error Responses:
+
+1. 404 Not Found: { "error": "Media not found" } — Invalid mediaId.
+
+2. 502 Bad Gateway: { "error": "Unable to fetch image from storage" } — Upstream storage timeout; show a fallback placeholder image in the UI.
+---
