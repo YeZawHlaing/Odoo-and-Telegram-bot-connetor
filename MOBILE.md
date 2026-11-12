@@ -31,3 +31,22 @@ Use this endpoint when you have an Odoo model name (e.g., `product.template`) an
   GET /api/v1/media/record/product.template/11 HTTP/1.1
   Host: 192.168.1.25:3000
   Accept: application/json
+
+---
+
+## Success Response (200 OK)
+```json
+{
+  "odoo_model": "product.template",
+  "odoo_record_id": "11",
+  "media": [
+    {
+      "media_id": "m_2eef8e5f9902",
+      "url": "[http://192.168.1.25:3000/api/v1/media/m_2eef8e5f9902](http://192.168.1.25:3000/api/v1/media/m_2eef8e5f9902)",
+      "mime_type": "image/jpeg",
+      "file_size": 12974,
+      "created_at": "2026-11-12T03:50:00.000Z"
+    }
+  ]
+}
+```
