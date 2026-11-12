@@ -11,7 +11,7 @@ This is draw.io link to check how system work
 [View System Architecture Diagram (draw.io)](https://drive.google.com/file/d/1PkXK8alMpuY6-hxhOvzmv0RZo3Yd3jWZ/view?usp=sharing)
 
 ## API Documentation for Mobile dev
-[Implementing REST API Guide](Odoo-and-Telegram-bot-connetor/MOBILE.md)
+[Implementing REST API Guide](MOBILE.md)
 
 ## Architecture Overview
 
