@@ -5,6 +5,10 @@ A Node.js, Express, and MySQL middleware service that bridges **Odoo**, **Telegr
 When a user uploads an image in Odoo, Odoo dispatches the raw binary stream to this middleware. The middleware forwards the image to a private Telegram channel via the Telegram Bot API, stores the persistent `file_id` mapping in MySQL, and exposes clean, token-free REST endpoints for mobile apps to fetch and stream images.
 
 ---
+## System Architecture Diagram
+
+This is draw.io link to check how system work
+[View System Architecture Diagram (draw.io)](https://drive.google.com/file/d/1PkXK8alMpuY6-hxhOvzmv0RZo3Yd3jWZ/view?usp=sharing)
 
 ## Architecture Overview
 
